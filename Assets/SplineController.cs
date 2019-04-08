@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class SplineController : MonoBehaviour {
@@ -32,6 +33,10 @@ public class SplineController : MonoBehaviour {
 
 		if(Input.GetKeyDown(KeyCode.I)) {
 			HideInstruction();
+		}
+		
+		if(Input.GetKeyDown(KeyCode.Escape)) {
+			SceneManager.LoadScene("SplineScene02");
 		}
 	}
 
